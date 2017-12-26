@@ -10,8 +10,12 @@ public class PlayerController : MonoBehaviour
 	
 	//Player Values
 	[Range(0,20)] public float haltingMultiplier;
-
 	[Range(0, 100)] public float playerSpeed;
+	[Range(0, 10)] public int shurikenCount;
+	[Range(0, 100)] public float deploySpeed;
+	
+	//Shuriken Prefab
+	public GameObject ShurikenPrefab;
 	
 	void Awake ()
 	{
@@ -25,6 +29,12 @@ public class PlayerController : MonoBehaviour
 		
 		//Handle Weightiness
 		MomentumMultipliers();
+		
+		//Handle Shuriken Deployment
+		if (Input.GetMouseButtonDown(0))
+		{
+			StartCoroutine(DeployShuriken());
+		}
 	}
 
 	void Move()
@@ -47,5 +57,20 @@ public class PlayerController : MonoBehaviour
 			Debug.Log("X Halting");
 			rb.velocity += Vector2.right * Physics2D.gravity.y * (haltingMultiplier - 1) * Time.deltaTime;
 		}
+	}
+
+	IEnumerator DeployShuriken()
+	{
+		if (shurikenCount > 0)
+		{
+			Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+			var shurikenInstance = (GameObject) Instantiate(
+				ShurikenPrefab,
+				transform.position,
+				transform.rotation);
+			shurikenInstance.transform.position = Vector3.Lerp(transform.position, mousePos, Time.deltaTime * deploySpeed);
+			shurikenCount--;
+		}
+		yield return new WaitForSeconds(.1f);
 	}
 }

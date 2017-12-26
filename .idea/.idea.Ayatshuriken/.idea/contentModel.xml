@@ -19,6 +19,7 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="PlayerController.cs" t="Include" />
+          <e p="ShurikenController.cs" t="Include" />
         </e>
       </e>
       <e p="Ayatshuriken.sln" t="IncludeFlat" />
