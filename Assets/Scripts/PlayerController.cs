@@ -33,8 +33,13 @@ public class PlayerController : MonoBehaviour
 		//Handle Shuriken Deployment
 		if (Input.GetMouseButtonDown(0))
 		{
-			StartCoroutine(DeployShuriken());
+			DeployShuriken();	
 		}
+		
+//		if (Input.GetKeyDown(KeyCode.Space))
+//		{
+//			ReturnShuriken();
+//		}
 	}
 
 	void Move()
@@ -59,18 +64,20 @@ public class PlayerController : MonoBehaviour
 		}
 	}
 
-	IEnumerator DeployShuriken()
+	void DeployShuriken()
 	{
 		if (shurikenCount > 0)
 		{
-			Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 			var shurikenInstance = (GameObject) Instantiate(
 				ShurikenPrefab,
 				transform.position,
 				transform.rotation);
-			shurikenInstance.transform.position = Vector3.Lerp(transform.position, mousePos, Time.deltaTime * deploySpeed);
 			shurikenCount--;
 		}
-		yield return new WaitForSeconds(.1f);
+	}
+
+	void ReturnShuriken()
+	{
+		shurikenCount--;
 	}
 }
