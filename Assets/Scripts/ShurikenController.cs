@@ -28,10 +28,11 @@ public class ShurikenController : MonoBehaviour {
 		//Rotation
 		transform.Rotate(Vector3.forward * spinSpeed * Time.deltaTime);
 		
-		//Go To Mouse
+		//Go To Mouse Deploy Shuriken
 		float currentDuration = (Time.time - startTime) * deploySpeed;
 		float journeyPercent = currentDuration / totalDistance;
 		transform.position = Vector3.Lerp(transform.position, endPos, journeyPercent);
+		
 		//Restricting Z Axis Value
 		transform.position = new Vector3(transform.position.x, transform.position.y, 0);
 
