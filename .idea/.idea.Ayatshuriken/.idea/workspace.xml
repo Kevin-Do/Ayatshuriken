@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4e6e4d7-bfca-4611-8305-265c6b23b3bb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.Ayatshuriken/.idea/contentModel.xml" afterPath="$PROJECT_DIR$/.idea/.idea.Ayatshuriken/.idea/contentModel.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.Ayatshuriken/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/.idea.Ayatshuriken/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/server.js" afterPath="$PROJECT_DIR$/Server/server.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Network.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/Network.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -89,12 +89,13 @@
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Network.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
-              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <caret line="21" column="34" lean-forward="false" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
               <folding>
-                <marker date="1514619706875" expanded="true" signature="6:60" ph="..." />
-                <marker date="1514619706875" expanded="true" signature="98:361" ph="{...}" />
-                <marker date="1514619706875" expanded="true" signature="182:268" ph="{...}" />
-                <marker date="1514619706875" expanded="true" signature="304:359" ph="{...}" />
+                <marker date="1514621273000" expanded="true" signature="6:60" ph="..." />
+                <marker date="1514621273000" expanded="true" signature="98:518" ph="{...}" />
+                <marker date="1514621273000" expanded="true" signature="215:333" ph="{...}" />
+                <marker date="1514621273000" expanded="true" signature="365:424" ph="{...}" />
+                <marker date="1514621273000" expanded="true" signature="461:516" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -236,12 +237,12 @@
       <updated>1514285536586</updated>
       <workItem from="1514285540718" duration="10140000" />
       <workItem from="1514414720988" duration="1237000" />
-      <workItem from="1514619183030" duration="468000" />
+      <workItem from="1514619183030" duration="987000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11845000" />
+    <option name="totallyTimeSpent" value="12364000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -378,12 +379,13 @@
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Network.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <caret line="21" column="34" lean-forward="false" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
           <folding>
-            <marker date="1514619706875" expanded="true" signature="6:60" ph="..." />
-            <marker date="1514619706875" expanded="true" signature="98:361" ph="{...}" />
-            <marker date="1514619706875" expanded="true" signature="182:268" ph="{...}" />
-            <marker date="1514619706875" expanded="true" signature="304:359" ph="{...}" />
+            <marker date="1514621273000" expanded="true" signature="6:60" ph="..." />
+            <marker date="1514621273000" expanded="true" signature="98:518" ph="{...}" />
+            <marker date="1514621273000" expanded="true" signature="215:333" ph="{...}" />
+            <marker date="1514621273000" expanded="true" signature="365:424" ph="{...}" />
+            <marker date="1514621273000" expanded="true" signature="461:516" ph="{...}" />
           </folding>
         </state>
       </provider>
